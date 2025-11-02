@@ -31,6 +31,12 @@ html{
     color: white;
 }
 
+.btn:hover{
+    border-color: #003049;
+    background-color: #003049;
+    color: white;
+}
+
 section.flex-container{
     display: flex;
     flex-direction: row;
