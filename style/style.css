@@ -19,6 +19,7 @@ html{
     font-weight: bold;
 }
 
+
 .btn-light{
     border-color: #9DB2BF;
     background-color: #9DB2BF;
@@ -29,6 +30,13 @@ html{
     border-color: #780000;
     background-color: #780000;
     color: white;
+}
+
+.btn-edit{
+    border-color: #B5CB88;
+    background-color: #B5CB88;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .btn:hover{
@@ -104,6 +112,7 @@ header.toolbar{
     padding: 1rem 1rem 1rem 1rem;
     background-color: #ECECEC;
     height: 50px;
+    border-bottom: 1px solid darkgray;
 }
 
 h1.content-title{
@@ -137,23 +146,80 @@ section.data-view{
 }
 
 nav.data-navbar{
-    display: flex;
-    flex-direction: column;
     flex-basis: 20rem;
     flex-shrink: 0;
     flex-grow: 0;
     background-color: #ECECEC;
-        align-items: center;
+    align-items: center;
+    border-right: 1px solid darkgray;
+}
+
+header.searchbox{
+    display: flex;
+    align-items: center; /* allineamento verticale */
+    justify-content: center;
+    gap: 0.5rem;
+    height: 4rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-bottom: 1px solid darkgray;
 }
 
 input.find{
-    flex-basis: 15rem;
     height: 1.5rem;
-    flex-grow: 0;
-    flex-shrink: 0;
     background-color: #D9D9D9;
     border: #003049;
     border-radius: 10px;
+}
+
+main.searchbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-bottom: 1px solid darkgray; 
+}
+
+div.searchbox-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+   
+}
+
+div.searchbox-lbl{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 3rem ;
 
 }
 
+div.searchbox-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 3rem ;
+}
+
+img.btn-edit-icon{
+    height: fit-content;
+}
+
+label.lbl-small{
+    font-size: 0.75rem;
+    height: 1rem;
+    color: #003049;
+    font-weight: bold;
+}
+
+input.input-small{
+    background-color: #D9D9D9;
+    border: #003049;
+    border-radius: 2px;
+    height: 0.8rem;
+    font-size: 0.75rem;
+    width: 8.5rem;
+}
